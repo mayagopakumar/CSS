@@ -1,0 +1,61 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: #000000;
+}
+body{
+	max-height: 100vh;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	}
+
+input[type=text],input[type=password]{
+	width: 95%;
+	height: 85%;
+	margin: 10px 0;
+	padding: 15px 18px;
+	box-sizing: border-box;
+}
+input[type=submit]{
+	background-color: #ff4500;
+	color: #ffffff;
+	padding: 14px 20px;
+	margin: 7px 0;
+	width: 95%;
+	font-size: 18px;
+	border: 1px solid #ff4500;
+}
+form{
+	width: 49vw;
+	margin: auto;
+	padding: 140px 0;
+	vertical-align: middle;
+	max-height: 100%;
+	font-family: sans-serif;
+	box-sizing: border-box ;
+
+
+}
+.grad{
+	float: left;
+	width: 47vw;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgb(216, 191, 216, 1.0), rgb(255, 235, 205, 1.0));
+	margin-left: 0px;
+
+}
+@media only screen and (orientation: portrait) {
+	.grad{
+		display: none;
+	}
+	form{
+		width: 100vw;
+		margin-left: 20px;
+
+	}
+	.heading{
+		font-family: sans-serif;
+	}
+}
